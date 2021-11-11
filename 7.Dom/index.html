@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <h1 id="title" class="text-center my-3">Document Object Model (DOM)</h1>
+
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum architecto autem possimus
+            asperiores perspiciatis. Doloremque nam inventore at, iusto quidem esse reprehenderit doloribus. Distinctio
+            aliquam ab voluptas illum laboriosam nostrum!</p>
+
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum architecto autem possimus
+            asperiores perspiciatis. Doloremque nam inventore at, iusto quidem esse reprehenderit doloribus. Distinctio
+            aliquam ab voluptas illum laboriosam nostrum!</p>
+
+        <ul class="list-group my-5" id="ulContainer">
+            <li class="list-group-item" name="list-item-one">One</li>
+            <li class="list-group-item">Two</li>
+            <li class="list-group-item" id="last-item">Three</li>
+        </ul>
+
+        <button class="btn btn-primary mb-5" id="button">Clone Now</button>
+
+        <div class="box bg-light shadow-lg" style="width:100%; height:200px" id="box">
+            <div class="p-3">
+                (x:) <span id="x"></span>
+            </div>
+            <div class="p-3">
+                (y:) <span id="y"></span>
+            </div>
+        </div>
+
+
+        <div class="form">
+            <input type="text" class="form-control my-3" placeholder="Enter your Name" id="name">
+            <p>The Name is <span id="showName"></span>
+            </p>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="javascript" name="skills" value="JavaScript">
+                <label class="form-check-label" for="javascript">JavaScript</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="react" name="skills" value="React">
+                <label class="form-check-label" for="react">React</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="nodejs" name="skills" value="Node js">
+                <label class="form-check-label" for="nodejs">Node js/label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="expressjs" name="skills" value="Express Js">
+                <label class="form-check-label" for="expressjs">Express Js</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="mongodb" name="skills" value="Mongo DB">
+                <label class="form-check-label" for="mongodb">Mongo DB</label>
+            </div>
+            <div class="form-check">
+                <span id="selectedSkills"></span>
+            </div>
+        </div>
+
+    </div>
+    <script src="./inputEvent.js"></script>
+</body>
+
+</html>
