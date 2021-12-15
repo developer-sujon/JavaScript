@@ -1,0 +1,15 @@
+{
+  "name": "11.oop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Abstraction.js",
+  "scripts": {
+    "start": "nodemon Inheritance.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
