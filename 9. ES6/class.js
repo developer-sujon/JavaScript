@@ -5,6 +5,9 @@
 // function Person(name, age) {
 //     this.name = name;
 //     this.age = age;
+//     this.print = function() {
+//         return this.age
+//     }
 // }
 
 // Person.prototype.output = function() {
@@ -20,11 +23,16 @@ class Person {
         this.name = name;
         this.age = age;
     }
-    output(){
+    output = function(){
         return this.name;
     }
+
+}
+
+Person.prototype.hello = function() {
+    return this.name
 }
 
 const mohammad = new Person('Sujon', 21);
 
-console.log(mohammad.output());
+// console.log(mohammad.hello());
