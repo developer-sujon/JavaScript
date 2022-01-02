@@ -20,7 +20,7 @@
 // console.log(ulContainer.lastElementChild);
 
 const lists = document.getElementsByTagName('li');
-
+const listsArr = Array.prototype.slice.apply(lists);
 
 // for(let i = 0; i< lists.length; i++){
 //     lists[i].innerHTML = `(${i+1}). ${lists[i].innerHTML}`;
